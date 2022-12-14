@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.college_space.R;
+
 public class All_Logins_Activity extends AppCompatActivity {
 
     @Override

@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
              }catch(Exception e){
 
              }finally{
-                 Intent intent=new Intent(SplashActivity.this,All_Logins_Activity.class);
+                 Intent intent=new Intent(SplashActivity.this, All_Logins_Activity.class);
                  startActivity(intent);
              }
          }
