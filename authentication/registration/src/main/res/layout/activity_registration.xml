@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registraion">
+
+
+    <LinearLayout
+        android:id="@+id/TopBackgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/top_background_img"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="@string/app_name_capi"
+                android:textColor="@color/heading"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:text="@string/Registration_Form"
+                android:textColor="@color/form_name"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/scretcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="number" />
+
+            <RadioGroup
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/gmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Gmail Id"
+
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/pass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:ems="10"
+                android:hint="create password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/pass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="Registration" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/already_register"
+                android:textColor="@color/design_default_color_primary_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
