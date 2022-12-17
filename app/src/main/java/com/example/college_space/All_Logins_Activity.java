@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
-import com.example.college_space.R;
-import com.example.registration.Registraion;
+import com.example.registration.Registration;
 
 public class All_Logins_Activity extends AppCompatActivity {
 
@@ -20,7 +19,7 @@ public class All_Logins_Activity extends AppCompatActivity {
 
     public void registrationForm(View view)
     {
-        Intent intent=new Intent(All_Logins_Activity.this, Registraion.class);
+        Intent intent=new Intent(All_Logins_Activity.this, Registration.class);
         startActivity(intent);
 
     }

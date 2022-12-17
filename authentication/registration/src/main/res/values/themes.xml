@@ -1,0 +1,3 @@
+<resources>
+  <style name="Theme.College_Space" parent="Theme.MaterialComponents.Light"/>
+</resources>
