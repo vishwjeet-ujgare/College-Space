@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 rootProject.name = "College_Space"
 include ':app'
 include ':authentication:registration'
+include ':admin:admin_representation'
