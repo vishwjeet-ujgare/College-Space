@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">TimeTable</string>
+    <string name="home">Home</string>
+    <string name="dayview">Dayview</string>
+    <string name="weekview">Weekview</string>
+    <string name="setting">Setting</string>
+    <string name="time_table">Time Table</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="lets_make_management_easy">Lets Make Management easy</string>
+    <string name="college_space">College Space</string>
+    <string name="manage_time_table">Manage Time Table</string>
+    <string name="todo">TODO</string>
+    <string name="college_logo">College Logo</string>
+
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+    <string name="save">SAVE</string>
+    
+<!--    for default time spiner on add session -->
+<string-array name="sessioDefaultStartTime">
+    <item>"08:00 am"</item>
+</string-array>
+
+    <string-array name="sessioDefaultEndTime">
+        <item>"09:00 am"</item>
+    </string-array>
 </resources>

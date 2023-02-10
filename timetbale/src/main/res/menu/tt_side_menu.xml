@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/time_table">
+            <menu>
+                <item
+                    android:id="@+id/mi_dashboard"
+                    android:icon="@drawable/ic_dashboard_home"
+                    android:title="@string/dashboard" />
+
+                <item
+                    android:id="@+id/mi_dayview"
+                    android:icon="@drawable/ic_dayview_24_hrs"
+                    android:title="@string/dayview" />
+
+                <item
+                    android:id="@+id/mi_weekview"
+                    android:icon="@drawable/ic_weekview"
+                    android:title="@string/weekview" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/college_space">
+            <menu>
+                <item
+                    android:id="@+id/mi_collge_space_dashboard"
+                    android:icon="@drawable/ic_dashboard_home"
+                    android:title="@string/home" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mi_logout"
+            android:icon="@drawable/ic_logout_30"
+            android:title="@string/logout" />
+
+        <item
+            android:id="@+id/mi_send_feedback"
+            android:icon="@drawable/ic_send_feedback_30"
+            android:title="@string/send_feedback" />
+    </group>
+
+
+
+</menu>
