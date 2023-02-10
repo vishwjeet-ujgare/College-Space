@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.registration.Registration;
-import com.example.admin_representation.AdminDashboard;
+//import com.example.admin_representation.AdminDashboard;
 
 
 public class All_Logins_Activity extends AppCompatActivity {
@@ -28,7 +28,7 @@ public class All_Logins_Activity extends AppCompatActivity {
 
     public void onAdminDash(View view)
     {
-        Intent intent =new Intent(All_Logins_Activity.this, AdminDashboard.class);
-        startActivity(intent);
+//        Intent intent =new Intent(All_Logins_Activity.this, AdminDashboard.class);
+//        startActivity(intent);
     }
 }
