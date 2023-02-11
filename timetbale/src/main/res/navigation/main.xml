@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/mi_dashboard">
+
+    <fragment
+        android:id="@+id/mi_dashboard"
+        android:name="com.example.timetbale.TTDashboardFragment"
+        android:label="TT_dashboard"
+        tools:layout="@layout/fragment_t_t_dashboard" />
+    <fragment
+        android:id="@+id/mi_weekview"
+        android:name="com.example.timetbale.WeekviewFragment"
+        android:label="weekviewf"
+        tools:layout="@layout/fragment_weekviewf" />
+    <fragment
+        android:id="@+id/mi_dayview"
+        android:name="com.example.timetbale.DayviewFragment"
+        android:label="dayview"
+        tools:layout="@layout/fragment_dayview" />
+</navigation>

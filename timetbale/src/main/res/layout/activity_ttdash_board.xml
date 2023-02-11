@@ -10,17 +10,11 @@
     tools:context=".TTDashBoard"
     tools:openDrawer="start">
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationview"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/tt_side_menu_header_file"
-        app:menu="@menu/tt_side_menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -28,14 +22,29 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:background="#673AB7"
-           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:title="Time Table Dashboard"
-            app:titleTextColor="@color/white"
             app:titleMarginStart="10dp"
-          />
+            app:titleTextColor="@color/white" />
 
+<fragment
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navHostFragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/main"
+    />
 
     </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/tt_side_menu_header_file"
+        app:menu="@menu/tt_side_menu" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
