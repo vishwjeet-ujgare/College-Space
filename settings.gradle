@@ -18,3 +18,5 @@ rootProject.name = "College_Space"
 include ':app'
 include ':authentication:registration'
 include ':timetbale'
+include ':comman'
+include ':attendance'

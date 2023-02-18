@@ -27,7 +27,8 @@
         </activity>
         <activity
             android:name=".TTDashBoard"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

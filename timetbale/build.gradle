@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
@@ -7,7 +7,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.timetbale"
+
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -33,12 +33,9 @@ android {
 
     buildFeatures
             {
-                viewBinding= true;
+                viewBinding= true
             }
-    dataBinding
-            {
-                enabled=true;
-            }
+
 }
 
 dependencies {
@@ -46,6 +43,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //checak your aar file i have converted app  module into library module that why this line is heare
+//    implementation files("C:\\Users\\abc\\AndroidStudioProjects\\College-Space\\timetbale\\build\\outputs\\aar\\timetbale-debug.aar")
+    implementation files('C:\\\\Users\\\\abc\\\\AndroidStudioProjects\\\\College-Space\\\\timetbale\\\\build\\\\outputs\\\\aar\\\\timetbale-debug.aar"')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+
 import com.example.registration.Registration;
+import com.example.timetbale.TTDashBoard;
 //import com.example.admin_representation.AdminDashboard;
 
 
@@ -30,5 +33,12 @@ public class All_Logins_Activity extends AppCompatActivity {
     {
 //        Intent intent =new Intent(All_Logins_Activity.this, AdminDashboard.class);
 //        startActivity(intent);
+    }
+    public void onTimeTableBtn(View view)
+    {
+
+Intent intent=new Intent(All_Logins_Activity.this, TTDashBoard.class);
+startActivity(intent);
+
     }
 }
