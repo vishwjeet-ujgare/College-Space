@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.College_Space">
         <activity
+            android:name=".dmeoTab"
+            android:exported="false" />
+        <activity
             android:name=".SessionDetails"
             android:exported="false">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

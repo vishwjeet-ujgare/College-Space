@@ -8,7 +8,8 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
+import com.example.attendance.AttendanceDashboard;
+import com.example.mylibrary.MainActivityDemo;
 import com.example.registration.Registration;
 import com.example.timetbale.TTDashBoard;
 //import com.example.admin_representation.AdminDashboard;
@@ -40,5 +41,11 @@ public class All_Logins_Activity extends AppCompatActivity {
 Intent intent=new Intent(All_Logins_Activity.this, TTDashBoard.class);
 startActivity(intent);
 
+    }
+
+    public void onAttendaceBtn(View view)
+    {
+        Intent intent=new Intent(All_Logins_Activity.this, AttendanceDashboard.class);
+        startActivity(intent);
     }
 }

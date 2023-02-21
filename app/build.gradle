@@ -36,6 +36,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation project(path: ':authentication:registration')
     implementation project(path: ':timetbale')
+    implementation project(path: ':attendance')
+    implementation project(path: ':mylibrary')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'

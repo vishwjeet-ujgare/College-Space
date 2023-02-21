@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentList"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarBackgroundColor"
+       android:weightSum="3"
+        >
+
+        <ImageView
+            android:id="@+id/backBtnStudentList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:onClick="onBackBtnStudentList"
+            android:padding="15dp"
+            android:src="@drawable/baseline_back_arrow_30" />
+
+        <TextView
+            android:id="@+id/classNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MCA-I"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/three_vertical_dots"
+            android:layout_weight="0.8"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/studentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:dividerHeight="15dp"
+        android:layout_margin="15dp"
+        />
+
+</LinearLayout>

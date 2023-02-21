@@ -1,5 +1,8 @@
 <resources>
-    <string name="monday">Monday</string>
-    <string name="tuesday">Tuesday</string>
-    <string name="wednesday">Wednesday</string>
+
+    <string name="statastics">STATASTICS</string>
+    <string name="attendance">ATTENDANCE</string>
+    <string name="std">CLASS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

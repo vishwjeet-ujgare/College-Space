@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/MainActivityTheme"
+        tools:replace="android:name, android:allowBackup, android:supportsRtl, android:theme">
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+    </application>
 
 </manifest>
