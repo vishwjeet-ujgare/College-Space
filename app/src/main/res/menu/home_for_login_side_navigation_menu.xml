@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeForLoginMI"
+            android:icon="@drawable/ic_dashboard_home"
+            android:title="@string/home" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Manage Activities">
+            <menu>
+                <item
+                    android:id="@+id/homeForLoginTimetableMI"
+                    android:icon="@drawable/ic_timetable"
+                    android:title="@string/timetable" />
+
+                <item
+                    android:id="@+id/homeForLoginAttendanceMI"
+                    android:icon="@drawable/ic_attendance"
+                    android:title="@string/attendance" />
+
+
+                <item
+                    android:id="@+id/homeForLoginNotesMI"
+                    android:icon="@drawable/ic_book"
+                    android:title="@string/notes" />
+
+                <item
+                    android:id="@+id/homeForLoginOpportunitiesMI"
+                    android:icon="@drawable/ic_opportunities"
+                    android:title="@string/opportunities" />
+
+
+                <item
+                    android:id="@+id/homeForLoginComplaintsMI"
+                    android:icon="@drawable/ic_complaints"
+                    android:title="@string/complaints_grievance" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Notifications">
+
+            <menu>
+
+                <item
+                    android:id="@+id/homeForLoginNeewsfeedMI"
+                    android:icon="@drawable/ic_newsfeed"
+                    android:title="@string/news_and_annocements" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="A College ">
+            <menu>
+
+
+                <item
+                    android:id="@+id/homeForLoginFacultiesMI"
+                    android:icon="@drawable/ic_faculty"
+                    android:title="@string/faculty" />
+
+
+                <item
+                    android:id="@+id/homeForLoginGallrayMI"
+                    android:icon="@drawable/ic_gallary"
+                    android:title="@string/gallary" />
+
+                <item
+                    android:id="@+id/homeForLoginAbout"
+                    android:icon="@drawable/about"
+                    android:title="About" />
+
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/profile">
+            <menu>
+                <item
+                    android:id="@+id/homeForLoginEditProfile"
+                    android:title="Edit Profile"
+                    android:icon="@drawable/ic_update_male_profile"
+                    />
+
+                <item
+                    android:id="@+id/homeForLoginChangedPassword"
+                    android:title="@string/changed_password"
+                    android:icon="@drawable/baseline_lock_reset_24"/>
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/other_options">
+
+            <menu>
+
+                <item
+                    android:id="@+id/WithoutLoginClgWebsiteMI"
+                    android:icon="@drawable/ic_website"
+                    android:title="@string/website" />
+
+                <item
+                    android:id="@+id/WithoutLoginYoutubeMI"
+                    android:icon="@drawable/ic_youtube"
+                    android:title="@string/youtube" />
+
+
+                <item
+                    android:id="@+id/WithoutLoginLocationMI"
+                    android:icon="@drawable/ic_location_30"
+                    android:title="@string/location" />
+
+                <item
+                    android:id="@+id/homeForLoginShareMI"
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share" />
+
+                <item
+                    android:id="@+id/WithoutLoginDeveloperInfoMI"
+                    android:icon="@drawable/ic_developer"
+                    android:title="@string/developer" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Logout">
+
+            <menu>
+                <item
+                    android:id="@+id/WithoutLoginStudentLogoutMI"
+                    android:icon="@drawable/ic_logout_30"
+                    android:title="@string/logout" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -45,6 +45,7 @@ public class FragmentClass extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(context, studentList.class);
+
                 studentValues classNames=(studentValues) al.get(position);
                 intent.putExtra("className",classNames.getStudentClassName());
                 startActivity(intent);

@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">College_Space</string>
+    <string name="website">Website</string>
+    <string name="developer">Developer</string>
+    <string name="youtube">Youtube</string>
+    <string name="login">Login</string>
+    <string name="location">Location</string>
+    <string name="start">start</string>
+    <string name="close">Close</string>
+    <string name="student_login">Student Login</string>
+    <string name="other_logins">Other Logins</string>
+    <string name="home">Home</string>
+    <string name="neewsfeed">NeewsFeed</string>
+    <string name="faculty">Faculty</string>
+    <string name="gallary">Gallery</string>
+    <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_and_annocements">News and Announcements</string>
+    <string name="complaints_grievance">Complaints/Grievance</string>
+    <string name="logout">Logout</string>
+    <string name="share">Share</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="timetable">Timetable</string>
+    <string name="notes">Notes</string>
+    <string name="opportunities">Opportunities</string>
+    <string name="other_options">Other Options</string>
+    <string name="changed_password">Changed Password</string>
+
 </resources>

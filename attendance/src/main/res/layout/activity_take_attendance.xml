@@ -11,11 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/titleBarBackgroundColor"
+        android:onClick="onBonackTakeAttendance"
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/backTakeAttendance"
             android:layout_width="80dp"
             android:layout_height="match_parent"
+            android:onClick="onBackTakeAttendance"
             android:src="@drawable/baseline_back_arrow_30"
             android:tint="@color/titleBarBackgroundColorLight"
             tools:ignore="UseAppTint" />
@@ -28,6 +31,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/classNameTakeAttendance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/verdana"
@@ -35,14 +39,20 @@
                 android:textColor="@color/white"
                 android:textSize="24sp" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="21.02.2033 13.50"
-                android:textColor="@color/titleBarBackgroundColorLight"
-                android:textSize="20dp" />
+                android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/dateTakeAttendanceTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21.02.2033"
+                    android:textColor="@color/titleBarBackgroundColorLight"
+                    android:textSize="20dp" />
 
+            </LinearLayout>
         </LinearLayout>
 
         <ImageView
@@ -59,69 +69,95 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:paddingLeft="80dp"
-            android:text="Thursday"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingLeft="80dp">
+
+            <TextView
+                android:id="@+id/weekDaySTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:text="Thursday"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/timeTakeAttendanceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="5dp"
+                android:text=" 13.50:90"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical|end"
-                    android:text="Attendess"
-
+                    android:layout_weight="1"
+                    android:text="Attendees"
+                    android:gravity="center"
+                    android:textColor="@color/black"
                     android:textSize="18dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical|end"
-                    android:text="Select All"
 
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100/100"
+                    android:textColor="@color/black"
                     android:textSize="18dp" />
 
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical"
                 android:paddingRight="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100/100"
-
-                    android:textAlignment="center"
+android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Select All"
+                    android:textColor="@color/black"
                     android:textSize="18dp" />
+
 
                 <CheckBox
                     android:id="@+id/checkBox"
-                    android:layout_width="wrap_content"
+                    android:layout_width="90dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-
-                    />
+                    android:gravity="center" />
 
             </LinearLayout>
 
@@ -134,7 +170,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        />
+        android:dividerHeight="15dp" />
 
 
 </LinearLayout>

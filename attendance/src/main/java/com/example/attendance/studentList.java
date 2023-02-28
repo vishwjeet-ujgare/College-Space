@@ -26,7 +26,6 @@ public class studentList extends AppCompatActivity {
 
         TextView tv = (TextView) findViewById(R.id.classNameTitle);
         tv.setText(this.getIntent().getStringExtra("className"));
-
         listView = findViewById(R.id.studentListView);
 
 
@@ -53,7 +52,7 @@ public class studentList extends AppCompatActivity {
         list5.add(0, "105");
         list5.add(1, "Mangesh Malhari Golhar");
 
-arrayList=new ArrayList<>();
+        arrayList = new ArrayList<>();
         arrayList.add(list);
         arrayList.add(list2);
         arrayList.add(list3);
@@ -64,8 +63,7 @@ arrayList=new ArrayList<>();
         listView.setAdapter(studentListAdapter);
     }
 
-    public void onBackBtnStudentList(View view)
-    {
+    public void onBackBtnStudentList(View view) {
         finish();
     }
 }

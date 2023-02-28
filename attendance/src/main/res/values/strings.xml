@@ -1,8 +1,9 @@
 <resources>
 
     <string name="statastics">STATASTICS</string>
-    <string name="attendance">ATTENDANCE</string>
+    <string name="attendance">Attendance</string>
     <string name="std">CLASS</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_attendance">Manage Attendance</string>
 </resources>
