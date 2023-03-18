@@ -27,7 +27,6 @@
         <item android:title="@string/college_space">
             <menu>
                 <item
-                    android:id="@+id/mi_collge_space_dashboard"
                     android:icon="@drawable/ic_dashboard_home"
                     android:title="@string/home" />
             </menu>
@@ -37,12 +36,10 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/mi_logout"
             android:icon="@drawable/ic_logout_30"
             android:title="@string/logout" />
 
         <item
-            android:id="@+id/mi_send_feedback"
             android:icon="@drawable/ic_send_feedback_30"
             android:title="@string/send_feedback" />
     </group>

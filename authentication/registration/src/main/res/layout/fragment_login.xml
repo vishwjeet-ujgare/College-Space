@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentLogin"
+    android:background="@color/design_default_color_on_primary"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+>
+        <include layout="@layout/common_user_role_spinner_layout" />
+
+        <EditText
+
+            android:id="@+id/usernameLET"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Username / Email id"
+            android:textSize="18sp"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+           android:textColorHint="@color/light_black"
+            android:drawableLeft="@drawable/baseline_mail_outline_24"
+           android:drawablePadding="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/passwordLET"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/light_black"
+            android:background="@drawable/edit_text_bg"
+          android:drawableLeft="@drawable/lock_outline_16_20"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/forgotPasswordTV"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+
+            />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"/>
+
+        <include layout="@layout/common_login_forgot_layout"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

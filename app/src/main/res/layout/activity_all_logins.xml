@@ -15,7 +15,6 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -41,7 +40,6 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnTimeTable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -50,7 +48,6 @@
                 android:text="Time Table" />
 
             <Button
-                android:id="@+id/adminBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -59,7 +56,6 @@
                 android:text="ADMIN" />
 
             <Button
-                android:id="@+id/btnAttendance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -76,7 +72,6 @@
                 android:text="HOD" />
 
             <Button
-                android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -84,7 +79,6 @@
                 android:text="TEACHER" />
 
             <Button
-                android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   app:startDestination="@id/createDeptMI">
+
+    <fragment
+        android:id="@+id/createDeptMI"
+        android:name="com.example.college_space.administration.Fragment_Create_Dept"
+        android:label="fragment__create__dept"
+        tools:layout="@layout/fragment__create__dept" />
+    <fragment
+        android:id="@+id/semDetailsMI"
+        android:name="com.example.college_space.administration.Fragment_Semester_Details"
+        android:label="fragment__semester__details"
+        tools:layout="@layout/fragment__semester__details" />
+</navigation>

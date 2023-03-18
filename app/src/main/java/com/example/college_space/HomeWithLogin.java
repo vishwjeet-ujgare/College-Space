@@ -18,6 +18,7 @@ import com.example.attendance.AttendanceDashboard;
 import com.example.attendance.TakeAttendance;
 import com.example.timetbale.TTDashBoard;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeWithLogin extends AppCompatActivity {
     DrawerLayout drawerLayout;
@@ -42,21 +43,20 @@ public class HomeWithLogin extends AppCompatActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.start, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Intent intent;
                 switch (item.getItemId()) {
                     case R.id.homeForLoginBottomTimetableMI:
                         Toast.makeText(HomeWithLogin.this, "You clicked on timetable", Toast.LENGTH_SHORT).show();
-                         intent = new Intent(HomeWithLogin.this, TTDashBoard.class);
+                        intent = new Intent(HomeWithLogin.this, TTDashBoard.class);
                         startActivity(intent);
                         return true;
 
-                    case R.id.homeForLoginBottomAttendanceMI:MI:
+                    case R.id.homeForLoginBottomAttendanceMI:
                         Toast.makeText(HomeWithLogin.this, "You clicked on Attendance", Toast.LENGTH_SHORT).show();
-                         intent = new Intent(HomeWithLogin.this, AttendanceDashboard.class);
+                        intent = new Intent(HomeWithLogin.this, AttendanceDashboard.class);
                         startActivity(intent);
                         return true;
 

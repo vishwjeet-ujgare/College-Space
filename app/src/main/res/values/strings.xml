@@ -27,5 +27,17 @@
     <string name="opportunities">Opportunities</string>
     <string name="other_options">Other Options</string>
     <string name="changed_password">Changed Password</string>
+    <string name="create_department">Create Department</string>
+    <string name="enter_course_total_semesters">Enter Course Total Semesters</string>
+    <string name="enter_department_cource_name">Enter Department / Cource name</string>
+    <string name="select_date">Select Date</string>
+    <string name="end_date_of_the_academic">End Date of the academic</string>
+    <string name="starting_date_of_the_academic">Starting Date of the academic</string>
+    <string name="create">Create</string>
+    <string name="create_semester">Create Semester</string>
+    <string name="select_deparment_cource_name">Select Deparment / Cource Name</string>
+    <string name="show">show</string>
+    <string name="managed_semester_details">Managed Semester Details</string>
+    <string name="add_sem">Add Sem</string>
 
 </resources>

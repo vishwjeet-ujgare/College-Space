@@ -10,6 +10,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.example.registration.Login_Registration;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -25,7 +27,8 @@ public class HomeWithoutLogin extends AppCompatActivity {
     DrawerLayout homeWithoutLoginDrawerLayout;
     NavigationView homeWithoutLoginSideNavigationView;
     ActionBarDrawerToggle actionBarDrawerToggle;
-     BottomNavigationView homeWithoutLoginBottomNavigation;
+    BottomNavigationView homeWithoutLoginBottomNavigation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +37,10 @@ public class HomeWithoutLogin extends AppCompatActivity {
         withoutLoginToolbar = findViewById(R.id.withoutLoginToolbar);
         homeWithoutLoginDrawerLayout = findViewById(R.id.homeWithoutLoginDrawerLayout);
         homeWithoutLoginSideNavigationView = findViewById(R.id.homeWithoutLoginSideNavigationView);
-        homeWithoutLoginBottomNavigation=findViewById(R.id.homeWithoutLoginBottomNavigation);
+        homeWithoutLoginBottomNavigation = findViewById(R.id.homeWithoutLoginBottomNavigation);
 
         setSupportActionBar(withoutLoginToolbar);
-        if(getSupportActionBar()!=null)
-        {
+        if (getSupportActionBar() != null) {
 
             getSupportActionBar().setTitle("JSPM");
         }
@@ -47,10 +49,22 @@ public class HomeWithoutLogin extends AppCompatActivity {
         homeWithoutLoginDrawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
 
-        NavController navController= Navigation.findNavController(this, R.id.homeWithoutLoginFrameLayout);
-        NavigationUI.setupWithNavController(homeWithoutLoginBottomNavigation,navController);
+        NavController navController = Navigation.findNavController(this, R.id.homeWithoutLoginFrameLayout);
+        NavigationUI.setupWithNavController(homeWithoutLoginBottomNavigation, navController);
 
+        homeWithoutLoginSideNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+                switch (item.getItemId()) {
+                    case R.id.WithoutLoginStudentLoginMI:
+                        Intent in = new Intent(HomeWithoutLogin.this, Login_Registration.class);
+                        startActivity(in);
+
+                }
+                return true;
+            }
+        });
     }
 
     @Override
@@ -61,14 +75,11 @@ public class HomeWithoutLogin extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int itemId=item.getItemId();
-        if(itemId==R.id.menuStudentLoginHWLT)
-        {
-            Toast.makeText(this,"Clicked on student login ",Toast.LENGTH_SHORT).show();
-        }
-        else if(itemId==R.id.menuOtherLoginHWLT)
-        {
-            Toast.makeText(this,"Clicked on Other  login ",Toast.LENGTH_SHORT).show();
+        int itemId = item.getItemId();
+        if (itemId == R.id.menuStudentLoginHWLT) {
+            Toast.makeText(this, "Clicked on student login ", Toast.LENGTH_SHORT).show();
+        } else if (itemId == R.id.menuOtherLoginHWLT) {
+            Toast.makeText(this, "Clicked on Other  login ", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".administration.Fragment_Semester_Details">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginStart="30dp"
+      android:layout_marginEnd="30dp"
+      android:padding="5dp"
+      android:orientation="vertical">
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:text="@string/create_semester"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:text="@string/select_deparment_cource_name"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <Spinner
+        android:id="@+id/selectDepartmentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:foreground="@drawable/ic_baseline_arrow_drop_down_24"
+        android:padding="25dp"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        android:foregroundGravity="right|center_vertical"
+/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:text="@string/enter_course_total_semesters"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bottom_line"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:text="@string/starting_date_of_the_academic"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bottom_line"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/select_date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:text="@string/end_date_of_the_academic"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bottom_line"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/select_date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_bg"
+        android:padding="5dp"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+  </LinearLayout>
+
+</FrameLayout>

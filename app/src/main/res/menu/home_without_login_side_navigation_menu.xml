@@ -4,22 +4,18 @@
  <group
      android:checkableBehavior="single">
      <item
-         android:id="@+id/WithoutLoginClgWebsiteMI"
          android:title="@string/website"
          android:icon="@drawable/ic_website"/>
 
      <item
-         android:id="@+id/WithoutLoginYoutubeMI"
          android:title="@string/youtube"
          android:icon="@drawable/ic_youtube"/>
 
      <item
-         android:id="@+id/WithoutLoginLocationMI"
          android:title="@string/location"
          android:icon="@drawable/ic_location_30"/>
 
      <item
-         android:id="@+id/WithoutLoginDeveloperInfoMI"
          android:title="@string/developer"
          android:icon="@drawable/ic_developer"/>
 

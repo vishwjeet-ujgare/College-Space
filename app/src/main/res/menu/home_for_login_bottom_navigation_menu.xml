@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeForLoginBottomNotificationMI"
         android:title="@string/notification"
         android:icon="@drawable/ic_newsfeed"/>
     <item
@@ -15,12 +14,10 @@
         android:title="Attendance"
         android:icon="@drawable/ic_attendance"/>
     <item
-        android:id="@+id/homeForLoginBottomNotesMI"
         android:title="Notes"
         android:icon="@drawable/ic_book"/>
 
     <item
-        android:id="@+id/homeForLoginBottomOpportunitiesMI"
         android:title="Notes"
         android:icon="@drawable/ic_opportunities"/>
 

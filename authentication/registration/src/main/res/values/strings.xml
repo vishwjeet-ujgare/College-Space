@@ -5,15 +5,6 @@
     <string name="login_title">Login Page</string>
 
     <string name="already_register"><u>Already Register ? Login Here</u></string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
     <string name="password">Password</string>
     <string name="forgot_your_password">Forgot Your Password ?</string>
     <string name="login">LOGIN</string>
@@ -21,6 +12,27 @@
     <string name="back">BACK</string>
     <string name="username_or_mail_id">Username or Mail Id</string>
     <string name="login_as_a">Login As A</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="home">Home</string>
+    <string name="other_logins">Other Logins</string>
+    <string name="new_user_swipe_left">New User ? swipe left.</string>
+
+    <string name="student_login">Student Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+
+    <string name="already_registered_swipe_right">Already Registered ? Swipe Right</string>
+    <string name="whatsapp_number">Whatsapp Number</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+    <string name="other">other</string>
+    <string-array name="spinner_role_items">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>HOD</item>
+        <item>Admin</item>
+    </string-array>
 
 
 </resources>
