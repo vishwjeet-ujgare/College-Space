@@ -6,6 +6,7 @@
 
                 <item
                     android:id="@+id/createDeptMI"
+
                     android:title="@string/create" />
 
                 <item
@@ -22,7 +23,13 @@
 
                 <item
                     android:id="@+id/semDetailsMI"
+
                     android:title="@string/add_sem" />
+
+                <item
+                    android:id="@+id/addSubjectsMI"
+
+                    android:title="@string/add_subjects" />
 
             </menu>
         </item>

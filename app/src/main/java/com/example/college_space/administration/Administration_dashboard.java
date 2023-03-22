@@ -12,6 +12,9 @@ import android.widget.FrameLayout;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentContainerView;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
 import com.example.college_space.R;
 import com.google.android.material.navigation.NavigationView;
@@ -22,7 +25,7 @@ public class Administration_dashboard extends AppCompatActivity {
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     ActionBarDrawerToggle toggle;
-FragmentContainerView administration_fragment_container_view;
+FragmentContainerView administration_NavHostFragment;
 
 
     @Override
@@ -32,7 +35,11 @@ FragmentContainerView administration_fragment_container_view;
         navigationView = findViewById(R.id.administrationNavigationView);
         drawerLayout = findViewById(R.id.administrationDrawerLayout);
         toolbar = findViewById(R.id.administrationToolbar);
-        administration_fragment_container_view=findViewById(R.id.administration_fragment_container_view);
+        administration_NavHostFragment=findViewById(R.id.administration_NavHostFragment);
+
+        NavController  navController = Navigation.findNavController(Administration_dashboard.this, R.id.administration_NavHostFragment);
+        NavigationUI.setupWithNavController(navigationView, navController);
+
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("JSPM College Hadapsar");
@@ -41,19 +48,10 @@ FragmentContainerView administration_fragment_container_view;
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId())
-                {
 
 
-
-                }
-                return false;
-            }
-        });
 
     }
+
+
 }

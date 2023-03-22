@@ -32,16 +32,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Fragment_Create_Dept extends Fragment {
-    View view;
-    EditText courseNameET, abbET, totalSemET;
-    TextView startDateTV, endDateTV;
-    Date courseStartDate, courseEndDate;
-    DatePickerDialog datePickerDialog;
+    private  View view;
+    private EditText courseNameET, abbET, totalSemET;
+    private TextView startDateTV, endDateTV;
+    private Date courseStartDate, courseEndDate;
+    private DatePickerDialog datePickerDialog;
 
-    Button createBtn;
-    AlertDialog progressAlertDialog;
-    View progressDialogView;
-    SimpleDateFormat dateFormat;
+    private Button createBtn;
+    private AlertDialog progressAlertDialog;
+    private View progressDialogView;
+    private SimpleDateFormat dateFormat;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -242,7 +242,6 @@ public class Fragment_Create_Dept extends Fragment {
         endDateTV.setText("");
         courseStartDate = null;
         courseEndDate = null;
-
 
     }
 }

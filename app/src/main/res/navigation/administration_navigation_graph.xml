@@ -11,7 +11,13 @@
         tools:layout="@layout/fragment__create__dept" />
     <fragment
         android:id="@+id/semDetailsMI"
+
         android:name="com.example.college_space.administration.Fragment_Semester_Details"
         android:label="fragment__semester__details"
         tools:layout="@layout/fragment__semester__details" />
+    <fragment
+        android:id="@+id/addSubjectsMI"
+        android:name="com.example.college_space.administration.Fragment_Add_Subjects"
+        android:label="fragment__add__subjects"
+        tools:layout="@layout/fragment__add__subjects" />
 </navigation>

@@ -39,5 +39,20 @@
     <string name="show">show</string>
     <string name="managed_semester_details">Managed Semester Details</string>
     <string name="add_sem">Add Sem</string>
+    <string name="end_date">End date</string>
+    <string name="select_semester_start_date">Select Semester Start Date</string>
+    <string name="select_semester_end_date">Select Semester End Date</string>
+    <string name="enter_semester_number_i_e_1_2_3_etc">Enter Semester Number i.e 1,2,3 etc</string>
+    <string name="select_department_course">Select Department / Course</string>
+    <string name="select_semester">Select Semester</string>
+    <string name="next">Next</string>
+    <string name="enter_subject_name">Enter Subject Name</string>
+    <string name="save_and_add_another">Save and Add Another</string>
+    <string name="select_teacher_for_this_subject">Select Teacher for this subject</string>
+    <string name="confirmed_and_saved_data_into_database">Confirmed And Saved data into database</string>
+    <string name="select_department_and_semester">Select Department and Semester</string>
+    <string name="add_subjects">Add Subjects</string>
+    <string name="you_have_selected">You have Selected</string>
+    <string name="add_subject_details">Add Subject Details</string>
 
 </resources>

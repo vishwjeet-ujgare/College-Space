@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,33 +33,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:padding="10dp"
-        android:text="@string/select_deparment_cource_name"
+        android:layout_marginBottom="10dp"
+        android:text="@string/select_department_course"
         android:textColor="@color/black"
         android:textSize="18sp" />
+<include
+
+  layout="@layout/common_spinner_layout"/>
 
 
-    <Spinner
-        android:id="@+id/selectDepartmentSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_bg"
-        android:foreground="@drawable/ic_baseline_arrow_drop_down_24"
-        android:padding="25dp"
-        android:spinnerMode="dropdown"
-        android:textSize="20sp"
-        android:foregroundGravity="right|center_vertical"
-/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:padding="10dp"
-        android:text="@string/enter_course_total_semesters"
+        android:text="@string/enter_semester_number_i_e_1_2_3_etc"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
     <EditText
+        android:id="@+id/createdSemNumET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_bottom_line"
@@ -67,26 +62,30 @@
         android:padding="15dp"
         android:textColor="@color/black"
         android:textSize="18sp"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:padding="10dp"
-        android:text="@string/starting_date_of_the_academic"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="25dp"
+          android:padding="10dp"
+          android:text="@string/select_semester_start_date"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
 
-    <TextView
+      <TextView
+        android:id="@+id/semStartDateTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_bottom_line"
         android:drawablePadding="10dp"
         android:padding="10dp"
-        android:text="@string/select_date"
+        android:hint="@string/select_date"
+        android:textColorHint="@color/black"
         android:textColor="@color/black"
         android:textSize="18sp"
+          app:drawableStartCompat="@drawable/ic_baseline_calendar_today_30"
        />
 
     <TextView
@@ -94,21 +93,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:padding="10dp"
-        android:text="@string/end_date_of_the_academic"
+        android:text="@string/select_semester_end_date"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_bottom_line"
-        android:drawablePadding="10dp"
-        android:padding="10dp"
-        android:text="@string/select_date"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        />
-    <Button
+      <TextView
+          android:id="@+id/semEndDateTV"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edittext_bottom_line"
+          android:drawablePadding="10dp"
+          android:padding="10dp"
+          android:hint="@string/end_date"
+          android:textColorHint="@color/black"
+
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          app:drawableStartCompat="@drawable/ic_baseline_calendar_today_30"/>
+
+      <Button
+        android:id="@+id/createSemBtn"
         android:layout_width="300dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
