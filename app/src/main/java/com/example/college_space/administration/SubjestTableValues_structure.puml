@@ -1,0 +1,163 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.example.college_space.administration.SubjestTableValues",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_312184102 { 
+   	label=college_space
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Fragment_Add_Subjects1773789759[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Fragment_Add_Subjects</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   Request_URL: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   addSubjectsDataBtn: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   commonAlertDialog: CommonAlertDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   context: Context [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   custom_alert_dialog_layout: View [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   departmentSpinner: Spinner [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   department_valuesList: List&lt;Department_Values&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   saveAddAnotherBtn: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectDeptSemBtn: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectSemNumTVCustomeDia: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectedDataLinearLayout: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectedDepNameTV: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectedDeptID: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectedSem: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectedSemNameTV: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   semList: List&lt;String&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   semNumSpinner: Spinner [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   srno: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   subjectAbbrET: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   subjectDetailsLinearLayout: LinearLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   subjectNameET: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   subjectTable: TableLayout [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   subject_table_values_list: List&lt;SubjestTableValues&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   teacher_values_list: List&lt;Teacher_Values&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   teachersSpinner: Spinner [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   view: View [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- addSubjectTableRow(subjestTableValues: SubjestTableValues)</TD></TR>
+<TR><TD ALIGN="LEFT" >- getMaxSemCountForDept(course_id: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >- makeHideOnNotSelectedDeptSem()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle): View</TD></TR>
+<TR><TD ALIGN="LEFT" >- onSelectingDeptSem()</TD></TR>
+<TR><TD ALIGN="LEFT" >- sendData(custome_alert_context: Context)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SubjestTableValues1773789759[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SubjestTableValues</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   abbreviation: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-     [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   teacher: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Fragment_Add_Subjects1773789759 -> SubjestTableValues1773789759[label="subject_table_values_list
+[0..*]"];
+    
+}
+@enduml

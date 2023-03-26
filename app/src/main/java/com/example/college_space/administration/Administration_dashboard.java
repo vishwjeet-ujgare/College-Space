@@ -48,9 +48,6 @@ FragmentContainerView administration_NavHostFragment;
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-
-
-
     }
 
 

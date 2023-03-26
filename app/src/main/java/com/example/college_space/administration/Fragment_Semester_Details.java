@@ -74,7 +74,7 @@ public class Fragment_Semester_Details extends Fragment {
         createSemBtn = view.findViewById(R.id.createSemBtn);
 
         // Create a StringRequest to fetch department data from server
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -244,7 +244,7 @@ public class Fragment_Semester_Details extends Fragment {
     private void insertSemesterData(String sem_num, String sem_start_date, String sem_end_date, String dept_id) {
         RequestQueue requestQueue = Volley.newRequestQueue(view.getContext());
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if (response.equals("Success")) {

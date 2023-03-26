@@ -5,6 +5,7 @@ public class SubjestTableValues {
 
     private String name;
     private String teacher;
+
     private String abbreviation;
 
     public SubjestTableValues(String name,String abbreviation, String teacher) {

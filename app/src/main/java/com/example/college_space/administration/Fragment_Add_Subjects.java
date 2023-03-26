@@ -270,7 +270,7 @@ public class Fragment_Add_Subjects extends Fragment {
 
         RequestQueue requestQueue = Volley.newRequestQueue(custome_alert_context);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 department_valuesList = new ArrayList<>();
@@ -337,7 +337,7 @@ public class Fragment_Add_Subjects extends Fragment {
     private void getMaxSemCountForDept(int course_id) {
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -401,7 +401,7 @@ public class Fragment_Add_Subjects extends Fragment {
     private void setAllTeachers(Context custome_alert_context) {
         RequestQueue requestQueue = Volley.newRequestQueue(custome_alert_context);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 teacher_values_list = new ArrayList<>();
@@ -558,7 +558,7 @@ public class Fragment_Add_Subjects extends Fragment {
     private void sendData(Context custome_alert_context) {
         RequestQueue requestQueue = Volley.newRequestQueue(custome_alert_context);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Request_URL, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 commonAlertDialog.showErrorDialog(context, "Here is Reponse : \n" + response, "Studnet data");

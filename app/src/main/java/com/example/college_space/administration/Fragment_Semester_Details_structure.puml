@@ -1,0 +1,167 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.example.college_space.administration.Fragment_Semester_Details",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_312184102 { 
+   	label=college_space
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Department_Values1773789759[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Department_Values</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Fragment_Semester_Details1773789759[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Fragment_Semester_Details</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   Request_URL: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   commonAlertDialog: CommonAlertDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   createSemBtn: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   datePickerDialog: DatePickerDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   department_valuesList: List&lt;Department_Values&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   endDateTV: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   selectDepartmentSpinner: Spinner [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   semNoET: EditText [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   startDateTV: TextView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   view: View [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- clearAllFields()</TD></TR>
+<TR><TD ALIGN="LEFT" >- insertSemesterData(sem_num: String, sem_start_date: String, sem_end_date: String, dept_id: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >- onCreateSemBtn()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle): View</TD></TR>
+<TR><TD ALIGN="LEFT" >- showDatePickerDialog(textView: TextView)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_753913105 { 
+   	label=common
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   CommonAlertDialog379217798[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CommonAlertDialog</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ showErrorDialog(context: Context, errorMessage: String, title: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ showMsgDialog(context: Context, msg: String, title: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Fragment_Semester_Details1773789759 -> CommonAlertDialog379217798[label="commonAlertDialog
+[0..1]"];
+Fragment_Semester_Details1773789759 -> Department_Values1773789759[label="department_valuesList
+[0..*]"];
+    
+}
+@enduml

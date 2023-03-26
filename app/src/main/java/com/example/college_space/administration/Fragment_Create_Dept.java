@@ -42,7 +42,7 @@ public class Fragment_Create_Dept extends Fragment {
     private AlertDialog progressAlertDialog;
     private View progressDialogView;
     private SimpleDateFormat dateFormat;
-
+private String Request_URL="http:// 192.168.0.103:8080/College_Space_API/TransferRequest";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -177,7 +177,7 @@ public class Fragment_Create_Dept extends Fragment {
         progressAlertDialog.show();
 
         RequestQueue requestQueue =Volley.newRequestQueue(view.getContext());
-        StringRequest stringRequest=new StringRequest(Request.Method.POST, "http://192.168.1.76:8080/College_Space_API/TransferRequest", new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Request.Method.POST,  Request_URLS.AdminRequset_URLS, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 progressAlertDialog.dismiss();
